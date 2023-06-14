@@ -1,0 +1,287 @@
+/*Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+/*COMPONENTS*/
+/*Navbar*/
+.navBar {
+  margin-right: 5%;
+}
+
+.nav {
+  display: flex;
+  
+  list-style-type: none;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: #B669FB;
+}
+
+.navLink a:hover {
+  color: #E6478C;
+}
+
+/**********************************************************************/
+
+/*Button*/
+.roundButton {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin: auto;
+  padding: 20px;
+  background: #3a0b4b;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #260C2E 0px 30px 60px -30px, #110614 0px -2px 6px 2px inset;
+  color: #E6478C;
+  cursor: pointer;
+}
+.convertButton {
+  background: #E6478C ;
+  color: #3a0b4b;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.convertButton:hover {
+  color: #E6478C;
+  background-color: #260C2E;
+}
+
+.roundButton a {
+  text-decoration: none;
+  color: #E6478C;
+}
+.roundButton::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.buttonWrapper {
+  padding: 150px 0;
+}
+
+/**********************************************************************/
+
+/*HOME*/
+.homeWrapper {
+    /*background images*/
+    background-image: linear-gradient(0deg, rgba(184,142,15,0.48) 0%, rgba(69,40,39,0.51) 59%, rgba(38,12,46,0.46) 84%), url("Images/credit-card-background.png");
+    /*full height*/
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    /*Center and scale*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /****************************************************************/
+  /*Currency Converter*/
+  .appWrapper {
+    /*background images*/
+    background-image: url("Images/pattern-white.png"), linear-gradient(0deg, rgba(184,142,15,0.70) 0%, rgba(69,40,39,0.70) 59%, rgba(38,12,46,0.80) 94%);
+    /*full height*/
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    /*Center and scale*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*Form Style*/
+  .currencyFormWrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .currencyForm {
+    background: linear-gradient(0deg, rgba(38,12,46, 0.80) 2%, rgba(69,40,39) 50%, #4E2E27 99%);
+    padding: 0px 80px 40px 80px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #260C2E 0px 30px 60px -30px, #110614 0px -2px 6px 2px inset;
+    margin-top: 15px;
+  }
+  .formItems {
+    font-size: 20px;
+    padding: 5px;
+    color: #E6478C;
+  }
+  
+  .header{
+    color: #E6478C;
+    font-size: 54px;
+    font-weight: 400;
+  }
+  .inputInForm {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    margin-left: 8px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #E6478C;
+  }
+  .formItems p {
+    font-size: 24px;
+    padding-left: 0;
+  }
+  
+  .formResult {
+    color: #E6478C;
+    font-size: 24px;
+    display: flex;
+    align-items: baseline;
+
+  }
+ 
+  .currencyResult {
+    background-color: white;
+    font-size: 24px;
+    padding: 6px 10px 6px 50%;
+    
+  }
+
+  /**********************************************************************/
+
+  /*About*/
+  .aboutWrapper {
+    margin: 80px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+  }
+  
+  .photo {
+    padding-right: 20px;
+  }
+
+  /*NotFound*/
+  .nfHeading {
+    text-align: center;
+  }
+
+  /**********************************************************************/
+  /*Media query*/
+  /**********************************************************************/
+
+  @media only screen and (max-width: 1060px) {
+
+    /*About*/
+    .aboutWrapper {
+      margin: 80px 30px 80px 30px;
+      padding: 30px;
+    }
+
+    .nfHeading {
+      margin-top: 10px;
+    }
+  }
+
+  /**********************************************************************/
+
+  @media only screen and (max-width: 767px) {
+    /*Home*/
+    .homeWrapper {
+      background-position: unset;
+    }
+    
+    /*The button on currency page*/
+    .convertButton {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    /**********************************************************************/
+
+    /*currency converter*/
+    .currencyForm {
+      padding: 0px 20px 10px 20px;
+      margin-top: 70px;
+    }
+    .header{
+      font-size: 45px;
+    }
+    .formItems {
+      font-size: 16px;
+      padding: 5px;
+    }
+    .inputInForm {
+      font-size: 16px;
+      margin-left: 8px;
+      padding: 5px;
+    }
+    .currencyResult {
+      font-size: 16px;
+      padding: 6px 10px 6px 50%;
+
+    }
+    .formResultHeading {
+      font-size: 16px;
+    }
+   
+  }
+
+/**********************************************************************/
+ 
+  @media only screen and (max-width: 566px) {
+    
+    /*Currency converter*/
+    .header{
+      font-size: 24px;
+    }
+    .formItems {
+      font-size: 14px;
+    }
+    .inputInForm {
+      font-size: 14px;
+    }
+    .currencyResult {
+      font-size: 14px;
+      padding: 6px 10px 6px 20%;
+
+    }
+    .formResultHeading {
+      font-size: 14px;
+    }
+
+    /**********************************************************************/
+
+    /*About*/
+    .contentWrapper {
+      display: block;
+    }
+    .photo{
+      padding: 0;
+      margin-left: 0;
+      display: flex;
+    }
+     img {
+       width: 200px;
+       margin: 0 auto;
+     }
+    .nfHeading {
+      margin-bottom: 5px;
+    }
+  
+}
