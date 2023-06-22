@@ -88,6 +88,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .info {
+    text-align: center;
+    color:#3a0b4b;
+  }
+  .infoB {
+    font-weight: 700;
+  }
+
+  .infoWrap {
+    padding: 20px;
+  }
 
   /****************************************************************/
   /*Currency Converter*/

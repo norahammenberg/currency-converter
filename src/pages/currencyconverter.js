@@ -29,7 +29,7 @@ function CurrencyConvert () {
         fetch (`https://api.apilayer.com/currency_data/convert?to=${convertto}&from=${convertfrom}&amount=${amount}`, {
                 method: 'GET',
                 headers: {
-                    "apikey": "password"
+                    "apikey": process.env.REACT_APP_KEY
                 }//end headers
             })//end fetch
             .then(response => response.json())

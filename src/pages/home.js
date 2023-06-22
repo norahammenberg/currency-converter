@@ -15,7 +15,14 @@ function Home() {
         <div className="homeWrapper">
             <Navbar />
             <div className="buttonWrapper">
-            <Button className="roundButton" type="button" text="Convert Now" onClick={handleClick} /> 
+                <Button className="roundButton" type="button" text="Convert Now" onClick={handleClick} />
+                <div className='infoWrap'>
+                    <p className="info infoB">Hello and thank you for the visit. </p> 
+                    <p className="info">This Currency Convert was made during my studies at University West. </p> 
+                    <p className="info">Unfortnually there is a limitation of 100 API calls per month so I kindley ask you to use the app sparley. </p> 
+                    <p className="info">Thank you! </p> 
+                </div>
+                
             </div>
         </div>
     );

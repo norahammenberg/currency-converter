@@ -2,7 +2,7 @@
 import { useState, useEffect} from 'react';
 
 function ConvertFromTo (props) {
-
+    
     //collect data submitted by user to send up the parent: 
     const handleKeyUp = (e) => {
         console.log("ConvertFromTo, handleKeyUp()", e.target.value);
@@ -22,7 +22,7 @@ function ConvertFromTo (props) {
         fetch ("https://api.apilayer.com/currency_data/list", {
             method: 'GET',
             headers: {
-                "apikey": "password"
+                "apikey": process.env.REACT_APP_KEY
             }//end headers
         })//end fetch
         .then(response => response.json())
